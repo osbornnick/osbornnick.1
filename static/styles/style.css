@@ -17,3 +17,11 @@
 .row {
   font-family: 'Merriweather'
 }
+
+a:hover {
+  background-color: #FADA5E;
+}
+
+.link_1 {
+  /* make custom hover */
+}
