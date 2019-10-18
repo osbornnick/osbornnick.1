@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<div class="container">
+  <div class="row align-items-center justify-content-center" id="header">
+    <div class="col-md-5">
+      <h3 id="preamble">Hi, I'm</h3>
+      <h1>Nick Osborn.</h1>
+
+      <ul>
+        <li>I like math and computers.</li>
+        <li>I play the guitar, and ultimate frisbee.</li>
+        <li>You can find me on <a href="https://github.com/osbornnick" target="_blank">GitHub</a>.</li>
+        <li>Or on my blog.</li>
+        <li>And of course, my résumé.</li>
+      </ul>
+
+    </div>
+
+    <div class="col-md-5">
+      <img src="{% static '/me-circle.png' %}" id="myface" alt="Sometimes I smile without teeth" style="max-height: 300px">
+    </div>
+  </div>
+  <!--
+  <div class= "row justify-content-center">
+    <div class="col-md-5">
+    </div>
+    <div class="col-md-5 col-offset-1">
+    </div>
+  </div>
+-->
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <!--
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla convallis felis, rutrum efficitur elit molestie non. Proin ac ullamcorper nulla. Donec viverra ligula erat, vel volutpat nisl mollis et. Vivamus fermentum nulla sed dapibus posuere. Morbi mi velit, ultrices a purus non, elementum tempus nunc. Integer suscipit fringilla ante eget dictum. In et facilisis magna. Morbi in dictum ante. Sed rutrum gravida eros, vel venenatis sem tincidunt sed. Maecenas ac volutpat nisi. In hac habitasse platea dictumst. Sed commodo, lectus ac commodo convallis, turpis tortor pellentesque tortor, at semper mi risus nec nibh. Donec non nibh ultricies, bibendum ante sed, egestas lacus. Sed fringilla ante eget dui semper, eget sagittis justo sagittis. Phasellus hendrerit quis lectus in euismod.
+    -->
+    </div>
+    <div class="col-sm">
+      <!--
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam odio tortor, pretium nec mollis vitae, finibus consectetur dolor. Ut tempus ligula eu ante molestie tincidunt eu a augue. Donec blandit magna a odio varius vestibulum. Quisque non tincidunt nulla, vitae pretium purus. In bibendum ipsum sed orci congue viverra. Nunc semper luctus convallis. Aliquam bibendum consectetur mauris, eget posuere metus vulputate eu. Cras lacinia sit amet augue sit amet vestibulum. Morbi vitae leo vel augue congue efficitur in at sem. Suspendisse in nulla justo. Curabitur aliquam est in eros cursus tincidunt. Integer sollicitudin nibh at nisi ornare, a pulvinar ipsum condimentum.
+      -->
+    </div>
+    <div class="col-sm">
+      <!--
+      Quisque venenatis dui libero, nec condimentum ipsum tincidunt id. Pellentesque sit amet ex eu augue fermentum viverra sed convallis ipsum. Sed iaculis, dui ut dictum scelerisque, ex lorem interdum nulla, quis rhoncus augue arcu non est. Duis ultricies, risus faucibus volutpat auctor, diam erat facilisis elit, finibus ornare lorem ex eu diam. Phasellus ac leo sed nunc ultrices sagittis. Aliquam id sodales leo, sed rhoncus enim. Cras vitae laoreet nisi. Sed laoreet eros vitae nunc rutrum, sit amet ultricies purus tempor. Maecenas posuere, lectus auctor lobortis facilisis, justo urna lobortis velit, lobortis auctor turpis justo sit amet neque. Fusce vel enim lorem. Proin tincidunt metus a convallis ultricies. Duis ut elementum nulla. In erat quam, varius aliquam vehicula sed, ultricies sed metus. Cras ligula ex, luctus eget vestibulum non, congue sit amet libero. Integer scelerisque auctor ipsum, a placerat nisi congue a.
+      -->
+    </div>
+  </div>
+</div>
+{% endblock %}

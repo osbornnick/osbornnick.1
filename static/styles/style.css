@@ -1,0 +1,30 @@
+#header {
+  font-family: 'Merriweather';
+  margin-top: 20px;
+}
+
+#preamble {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-style: italic;
+  font-family: serif;
+}
+
+#myface {
+  margin: 10px;
+}
+
+.link {
+  max-height: 28px;
+  height: auto;
+  width: auto;
+  padding: 0px 5px;
+}
+
+body {
+  margin-bottom: 40px;
+}
+
+.row {
+  font-family: 'Merriweather'
+}
