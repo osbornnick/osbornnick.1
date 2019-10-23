@@ -18,10 +18,39 @@
   font-family: 'Merriweather'
 }
 
-a:hover {
-  background-color: #FADA5E;
+.link:hover {
+  text-decoration: none;
+  color: black;
 }
 
-.link_1 {
-  /* make custom hover */
+.link {
+  color: black;
+  background-color: transparent;
+  /* box-shadow: 0 -3px 0 0 #FADA5E inset; */
+  transition: box-shadow 200ms;
+  transition-timing-function: cubic-bezier(.18, .89, .32, 1.28);
+}
+
+#link1 {
+  box-shadow: 0 -3px 0 0 #FADA5E inset;
+}
+
+#link1:hover {
+  box-shadow: 0 -10px 0 0 #FADA5E inset;
+}
+
+#link2 {
+  box-shadow: 0 -3px 0 0 #5E7EFA inset;
+}
+
+#link2:hover {
+  box-shadow: 0 -10px 0 0 #5E7EFA inset;
+}
+
+#link3 {
+  box-shadow: 0 -3px 0 0 #DAE1FE inset;
+}
+
+#link3:hover {
+  box-shadow: 0 -10px 0 0 #DAE1FE inset;
 }
