@@ -40,7 +40,7 @@ def blog_post(request, pk):
             comment.save()
 
     comments = Comment.objects.filter(post=post)
-    context = {
+    context = {  # access in HTML template
         "posts": post,
         "comments": comments,
         "form": form
