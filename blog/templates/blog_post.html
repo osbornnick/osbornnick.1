@@ -4,7 +4,7 @@
 
 <link href='{% static '/styles/blog_style.css' %}' type="text/css" rel="stylesheet" />
 {% block page_content %}
-
+<div class="center-body">
 <div class='row justify-content-center'>
   <div class='column-8'>
     <h1>{{ post.title }}</h1>
@@ -15,5 +15,5 @@
     {{ post.md | markdown }}
   </div>
 </div>
-
+</div>
 {% endblock %}
