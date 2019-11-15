@@ -28,6 +28,6 @@ def blog_post(request, pk):
     post = Post.objects.get(pk=pk)
 
     context = {  # access in HTML template
-        "posts": post
+        "post": post
     }
     return render(request, "blog_post.html", context)

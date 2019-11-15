@@ -1,7 +1,17 @@
-{% extends "base.html" %}
 {% extends "nav_bar.html" %}
+{% load markdown_extras %}
 
 {% block page_content %}
 
-{{ post.md | markdown }}
-{% endblock page_content %}
+<div class='row justify-content-center'>
+  <div class='column-8'>
+    <h1>{{ post.title }}</h1>
+  </div>
+</div>
+
+  <div class= 'column justify-content-center flex-column mx-5'>
+    {{ post.md | markdown }}
+  </div>
+</div>
+
+{% endblock %}
