@@ -56,7 +56,7 @@ ROOT_URLCONF = 'osbornnick.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['osbornnick/templates/', 'index/templates/'],
+        'DIRS': ['osbornnick/templates/', 'index/templates/', 'blog/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
