@@ -1,6 +1,8 @@
 {% extends "nav_bar.html" %}
 {% load markdown_extras %}
+{% load static %}
 
+<link href='{% static '/styles/blog_style.css' %}' type="text/css" rel="stylesheet" />
 {% block page_content %}
 
 <div class='row justify-content-center'>
@@ -9,7 +11,7 @@
   </div>
 </div>
 
-  <div class= 'column justify-content-center flex-column mx-5'>
+  <div class= 'column flex-column mx-5'>
     {{ post.md | markdown }}
   </div>
 </div>
