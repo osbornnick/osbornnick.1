@@ -1,6 +1,10 @@
-{% extends "nav_bar.html" %}
+{% extends "base.html" %}
 {% load markdown_extras %}
 {% load static %}
+
+{% block nav_bar %}
+{% include "nav_bar.html" %}
+{% endblock %}
 
 <link href='{% static '/styles/blog_style.css' %}' type="text/css" rel="stylesheet" />
 {% block page_content %}
