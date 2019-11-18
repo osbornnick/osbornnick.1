@@ -3,7 +3,7 @@ from blog.models import Post, Category
 
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug', 'created_on', 'last_modified')
+    list_display = ('title', 'slug', 'created_on', 'last_modified', 'id')
     search_fields = ['title']
     prepopulated_fields = {'slug': ('title',)}
 

@@ -24,8 +24,8 @@ def blog_category(request, category):
     return render(request, "blog_category.html", context)
 
 
-def blog_post(request, pk):
-    post = Post.objects.get(pk=pk)
+def blog_post(request, slug):
+    post = Post.objects.get(slug=slug)
 
     context = {  # access in HTML template
         "post": post
