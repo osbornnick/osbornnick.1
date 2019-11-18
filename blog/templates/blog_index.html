@@ -1,9 +1,27 @@
 {% extends "base.html" %}
+{% load markdown_extras %}
+{% load math_extras %}
 
 {% block nav_bar %}
 {% include "nav_bar.html" %}
 {% endblock %}
 
 {% block page_content %}
-
+<div class="container center-body">
+  <div class="row">
+    <!-- blog entries column -->
+    <div class "col-md-8 mt-3">
+      {% for post in posts %}
+      <div class="card mb-4" style="max-width: 750px;">
+        <div class="card-body">
+          <h2 class="card-title">{{ post.title }}</h2>
+          <p class="card-text text-muted h6">Nick Osborn | {{ post.created_on }}</p>
+          <p class="card-text">{{ post.md | markdown | slice:":200" }}</p>
+          <a href="{% url 'blog_post' post.slug %}" class="link" id="link{{ forloop.counter | mod:3}}">Read More</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 {% endblock %}
