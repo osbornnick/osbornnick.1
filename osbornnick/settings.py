@@ -86,7 +86,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'osbornnickdb',
-        'USER': 'osbornnick_user',
+        'USER': 'osbornnick',
         'PASSWORD': 'usrpwd',
         'HOST': 'localhost',
         'PORT': '',
