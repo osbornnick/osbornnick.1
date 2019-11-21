@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'osbornnick.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'osbornnick',
+        'NAME': 'osbornnickdb',
         'USER': 'osbornnick_user',
         'PASSWORD': 'usrpwd',
         'HOST': 'localhost',
