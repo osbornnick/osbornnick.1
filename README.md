@@ -1,6 +1,6 @@
 ## osbornnick.com v1
 
-A personal website built with Django and Bootstrap, hosted on heroku (probably)
+A personal website built with Django and Bootstrap, hosted using nginx and gunicorn
 
 
-not yet live.
+Live!
