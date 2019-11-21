@@ -62,3 +62,27 @@ LIGHT RED: #FA725E
 #link3:hover {
   box-shadow: 0 -10px 0 0 #FA725E inset;
 }
+/* BIG LINK */
+#biglink1 {
+  box-shadow: 0 -3px 0 0 #FADA5E inset;
+}
+
+#biglink1:hover {
+  box-shadow: 0 -15px 0 0 #FADA5E inset;
+}
+
+#biglink2 {
+  box-shadow: 0 -3px 0 0 #5E7EFA inset;
+}
+
+#biglink2:hover {
+  box-shadow: 0 -15px 0 0 #5E7EFA inset;
+}
+
+#biglink3 {
+  box-shadow: 0 -3px 0 0 #FA725E inset;
+}
+
+#biglink3:hover {
+  box-shadow: 0 -15px 0 0 #FA725E inset;
+}
