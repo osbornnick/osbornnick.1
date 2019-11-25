@@ -13,7 +13,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField()
     md = models.FileField(null=True)
-    content = models.TextField(default="default")
+    content = models.TextField(default="default", editable=False)
     created_on = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
     categories = models.ManyToManyField('Category', related_name='posts')
