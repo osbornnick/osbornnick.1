@@ -38,6 +38,11 @@ YELLOW:#FADA5E
 DARK BLUE:#DAE1FE
 LIGHT BLUE:#5E7EFA
 LIGHT RED: #FA725E
+
+or
+YELLOW: #FADA5E
+BLUE: #5ECCFA
+PURPLE: #8C5EFA
 */
 #link1 {
   box-shadow: 0 -3px 0 0 #FADA5E inset;
@@ -48,19 +53,19 @@ LIGHT RED: #FA725E
 }
 
 #link2 {
-  box-shadow: 0 -3px 0 0 #5E7EFA inset;
+  box-shadow: 0 -3px 0 0 #5ECCFA inset;
 }
 
 #link2:hover {
-  box-shadow: 0 -10px 0 0 #5E7EFA inset;
+  box-shadow: 0 -10px 0 0 #5ECCFA inset;
 }
 
 #link3 {
-  box-shadow: 0 -3px 0 0 #FA725E inset;
+  box-shadow: 0 -3px 0 0 #8C5EFA inset;
 }
 
 #link3:hover {
-  box-shadow: 0 -10px 0 0 #FA725E inset;
+  box-shadow: 0 -10px 0 0 #8C5EFA inset;
 }
 /* BIG LINK */
 #biglink1 {
@@ -72,17 +77,17 @@ LIGHT RED: #FA725E
 }
 
 #biglink2 {
-  box-shadow: 0 -3px 0 0 #5E7EFA inset;
+  box-shadow: 0 -3px 0 0 #5ECCFA inset;
 }
 
 #biglink2:hover {
-  box-shadow: 0 -15px 0 0 #5E7EFA inset;
+  box-shadow: 0 -15px 0 0 #5ECCFA inset;
 }
 
 #biglink3 {
-  box-shadow: 0 -3px 0 0 #FA725E inset;
+  box-shadow: 0 -3px 0 0 #8C5EFA inset;
 }
 
 #biglink3:hover {
-  box-shadow: 0 -15px 0 0 #FA725E inset;
+  box-shadow: 0 -15px 0 0 #8C5EFA inset;
 }
