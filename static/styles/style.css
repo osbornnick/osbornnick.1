@@ -1,0 +1,88 @@
+.center-body {
+  max-width: 800px;
+  margin:  10px auto;
+}
+
+#header {
+  font-family: 'Merriweather';
+  margin-top: 20px;
+}
+
+#preamble {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-style: italic;
+  font-family: serif;
+}
+
+#myface {
+  margin: 10px;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.link {
+  color: black;
+  background-color: transparent;
+  /* box-shadow: 0 -3px 0 0 #FADA5E inset; */
+  transition: box-shadow 200ms;
+  transition-timing-function: cubic-bezier(.18, .89, .32, 1.28);
+}
+/*
+COLOR BANK
+https://www.colorbook.io/hexcolors/view/Fada5e#complementary
+YELLOW:#FADA5E
+DARK BLUE:#DAE1FE
+LIGHT BLUE:#5E7EFA
+LIGHT RED: #FA725E
+*/
+#link1 {
+  box-shadow: 0 -3px 0 0 #FADA5E inset;
+}
+
+#link1:hover {
+  box-shadow: 0 -10px 0 0 #FADA5E inset;
+}
+
+#link2 {
+  box-shadow: 0 -3px 0 0 #5E7EFA inset;
+}
+
+#link2:hover {
+  box-shadow: 0 -10px 0 0 #5E7EFA inset;
+}
+
+#link3 {
+  box-shadow: 0 -3px 0 0 #FA725E inset;
+}
+
+#link3:hover {
+  box-shadow: 0 -10px 0 0 #FA725E inset;
+}
+/* BIG LINK */
+#biglink1 {
+  box-shadow: 0 -3px 0 0 #FADA5E inset;
+}
+
+#biglink1:hover {
+  box-shadow: 0 -15px 0 0 #FADA5E inset;
+}
+
+#biglink2 {
+  box-shadow: 0 -3px 0 0 #5E7EFA inset;
+}
+
+#biglink2:hover {
+  box-shadow: 0 -15px 0 0 #5E7EFA inset;
+}
+
+#biglink3 {
+  box-shadow: 0 -3px 0 0 #FA725E inset;
+}
+
+#biglink3:hover {
+  box-shadow: 0 -15px 0 0 #FA725E inset;
+}
