@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% load markdown_extras %}
 {% load static %}
 
 {% block nav_bar %}
@@ -17,7 +16,7 @@
 
 <div class="row">
   <div class= 'column flex-column mx-5'>
-    {{ post.md | markdown }}
+    {{ post.content | safe }}
   </div>
 </div>
 
