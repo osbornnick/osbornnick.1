@@ -23,7 +23,7 @@
             {{ category.name }}</a>
             {% endfor %}
           </p>
-          <p class="card-text">{{ post.content | safe | slice:":200" }}...</p>
+          <p class="card-text">{{ post.content | safe | slice:":200" }}<a href='{% url 'blog_post' post.slug %}'>...</a></p>
           <p class="card-text text-muted h6">Nick Osborn</p>
         </div>
       </div>
