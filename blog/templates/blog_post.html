@@ -4,8 +4,9 @@
 {% block nav_bar %}
 {% include "nav_bar.html" %}
 {% endblock %}
-
+{% block more_css %}
 <link href='{% static '/styles/blog_style.css' %}' type="text/css" rel="stylesheet" />
+{% endblock %}
 {% block page_content %}
 <div class="center-body">
 <div class='row justify-content-center'>
