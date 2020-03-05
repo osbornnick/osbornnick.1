@@ -38,14 +38,11 @@ YELLOW:#FADA5E
 DARK BLUE:#DAE1FE
 LIGHT BLUE:#5E7EFA
 LIGHT RED: #FA725E
-<<<<<<< HEAD
 
 or
 YELLOW: #FADA5E
 BLUE: #5ECCFA
 PURPLE: #8C5EFA
-=======
->>>>>>> 567e42239085d3c2c43994acbf5b35290a1906a7
 */
 #link1 {
   box-shadow: 0 -3px 0 0 #FADA5E inset;
@@ -56,7 +53,6 @@ PURPLE: #8C5EFA
 }
 
 #link2 {
-<<<<<<< HEAD
   box-shadow: 0 -3px 0 0 #5ECCFA inset;
 }
 
@@ -70,21 +66,6 @@ PURPLE: #8C5EFA
 
 #link3:hover {
   box-shadow: 0 -10px 0 0 #8C5EFA inset;
-=======
-  box-shadow: 0 -3px 0 0 #5E7EFA inset;
-}
-
-#link2:hover {
-  box-shadow: 0 -10px 0 0 #5E7EFA inset;
-}
-
-#link3 {
-  box-shadow: 0 -3px 0 0 #FA725E inset;
-}
-
-#link3:hover {
-  box-shadow: 0 -10px 0 0 #FA725E inset;
->>>>>>> 567e42239085d3c2c43994acbf5b35290a1906a7
 }
 /* BIG LINK */
 #biglink1 {
@@ -96,7 +77,6 @@ PURPLE: #8C5EFA
 }
 
 #biglink2 {
-<<<<<<< HEAD
   box-shadow: 0 -3px 0 0 #5ECCFA inset;
 }
 
@@ -110,19 +90,4 @@ PURPLE: #8C5EFA
 
 #biglink3:hover {
   box-shadow: 0 -15px 0 0 #8C5EFA inset;
-=======
-  box-shadow: 0 -3px 0 0 #5E7EFA inset;
-}
-
-#biglink2:hover {
-  box-shadow: 0 -15px 0 0 #5E7EFA inset;
-}
-
-#biglink3 {
-  box-shadow: 0 -3px 0 0 #FA725E inset;
-}
-
-#biglink3:hover {
-  box-shadow: 0 -15px 0 0 #FA725E inset;
->>>>>>> 567e42239085d3c2c43994acbf5b35290a1906a7
 }
