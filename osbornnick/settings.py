@@ -53,11 +53,14 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'osbornnick.urls'
-
+template_dirs = ['osbornnick/templates/',
+                 'index/templates/',
+                 'blog/templates/',
+                 'resume/templates']
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['osbornnick/templates/', 'index/templates/', 'blog/templates/'],
+        'DIRS': template_dirs,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
