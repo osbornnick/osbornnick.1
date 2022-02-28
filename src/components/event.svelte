@@ -10,14 +10,20 @@
     let h, w;
 </script>
 
-<div class="">
+<div class="hoverable">
     <div class="flex flex-row">
-        <div class="text-right basis-3/12 font-serif my-auto">
+        <div
+            class="sm:text-right basis-3/12 font-serif my-auto min-w-[30%] sm:min-w-0"
+        >
             <div class="text-xl">{year}</div>
             <div class="-translate-y-2">{month}</div>
         </div>
-        <div class="basis-1/12" bind:offsetHeight={h} bind:offsetWidth={w}>
-            <svg width="100%" height="100%" class="hidden sm:block">
+        <div
+            class="basis-1/12 hidden sm:block"
+            bind:offsetHeight={h}
+            bind:offsetWidth={w}
+        >
+            <svg width="100%" height="100%">
                 {#if first}
                     <path
                         d="M {w / 2} {h / 2} v {h / 2}"
@@ -45,10 +51,30 @@
                 />
             </svg>
         </div>
-        <div class="basis-8/12 my-auto">
+        <div class="basis-8/12 my-auto info">
             <h3 class="text-xl font-serif">{title}</h3>
             <h4 class="italic font-serif">{subtitle}</h4>
             <p>{@html description}</p>
         </div>
     </div>
 </div>
+
+<style>
+    .hoverable:hover .info {
+        transform: scale(1.1) translateX(35px);
+    }
+
+    .info {
+        transition: transform 0.3s;
+    }
+
+    .hoverable:hover circle {
+        transform: scale(1.5);
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+    }
+    circle {
+        transition: transform 0.3s;
+        transform-origin: 50% 50%;
+    }
+</style>
