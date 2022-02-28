@@ -10,11 +10,10 @@
     });
 </script>
 
-<a style="--color: {color}" {href}><slot /></a>
+<a class="dark:text-slate-300" style="--color: {color}" {href}><slot /></a>
 
 <style>
     a {
-        color: black;
         background-color: transparent;
         transition: box-shadow 200ms;
         transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);

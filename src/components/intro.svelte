@@ -2,9 +2,7 @@
     import Link from "../components/link.svelte";
 </script>
 
-<div
-    class="flex flex-row justify-evenly md:w-2/3 mx-auto my-10 flex-wrap-reverse"
->
+<div class="flex flex-row justify-evenly md:w-2/3 mx-auto flex-wrap-reverse">
     <div class="font-serif m-5">
         <h1 class="text-2xl italic">Hi, I'm</h1>
         <h1 class="text-4xl">Nick Osborn.</h1>
