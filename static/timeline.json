@@ -1,0 +1,35 @@
+{
+    "timeline": [
+        {
+            "date": "September 2015",
+            "title": "Bates College",
+            "subtitle": "Enrolled!",
+            "description": "Moved from the sleepy suburbs of Boston to Lewiston for my undergraduate education."
+        },
+        {
+            "date": "May 2019",
+            "title": "Bates College",
+            "subtitle": "Bachelor of Science, Mathematics and Physics",
+            "description": "Earned my undergraduate degree, dabbling in computer science as a hobbyist. Wrote a mathematics thesis titled <i>Convolution and Neural Networks</i> under the advisory of Prof. Katharine Ott. Nominated as a result to the Sigma Xi Research Honor Society."
+        },
+        {
+            "date": "September 2019",
+            "title": "Carney, Sandoe, & Associates",
+            "subtitle": "Hired!",
+            "description": "needs a description"
+        },
+        {
+            "date": "January 2021",
+            "title": "Northeastern University",
+            "subtitle": "Master of Science, Computer Science",
+            "description": "needs a description",
+            "concurrent": true
+        },
+        {
+            "date": "January 2022",
+            "title": "Northeastern University",
+            "subtitle": "Full time student again!",
+            "description": "Left CS&A to persue my masters full time"
+        }
+    ]
+}

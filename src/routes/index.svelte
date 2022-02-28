@@ -1,30 +1,31 @@
 <script>
     import Link from "../components/link.svelte";
-    ("");
+    import Timeline from "../components/timeline.svelte";
 </script>
 
-<main class="flex items-center flex-col">
-    <div class="flex flex-row justify-evenly w-1/2">
-        <div class="flex items-center">
-            <div>
-                <h1 class="font-serif text-2xl italic">Hi, I'm</h1>
-                <h1 class="font-serif text-4xl">Nick Osborn.</h1>
-                <p class="font-serif">I like to write code and bake bread.</p>
-                <p class="font-serif">I play piano and ultimate frisbee.</p>
-                <p class="font-serif">
-                    You can find me on <Link
-                        href="https://github.com/osbornnick/">github</Link
-                    >.
-                </p>
-            </div>
+<main class="container mx-auto justify-center">
+    <div
+        class="flex flex-row justify-evenly w-2/3 mx-auto my-10 flex-wrap-reverse"
+    >
+        <div class="font-serif m-5">
+            <h1 class="text-2xl italic">Hi, I'm</h1>
+            <h1 class="text-4xl">Nick Osborn.</h1>
+            <p>I like to write code and bake bread.</p>
+            <p>I play piano, D&D, and climb rocks.</p>
+            <p>
+                You can find me on <Link href="https://github.com/osbornnick/"
+                    >github</Link
+                >.
+            </p>
         </div>
         <img
             src={"../static/me-circle.png"}
             alt="me smiling"
-            class="m-5 w-1/3"
+            class="m-5 w-48"
         />
     </div>
+    <div class="w-2/3 mx-auto">
+        <h1 class="text-2xl font-serif">Professional Timeline</h1>
+        <Timeline />
+    </div>
 </main>
-
-<style>
-</style>
