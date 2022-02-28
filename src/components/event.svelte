@@ -12,9 +12,7 @@
 
 <div class="hoverable">
     <div class="flex flex-row">
-        <div
-            class="sm:text-right basis-3/12 font-serif my-auto min-w-[30%] sm:min-w-0"
-        >
+        <div class="sm:text-right basis-3/12 font-serif my-auto">
             <div class="text-xl">{year}</div>
             <div class="-translate-y-2">{month}</div>
         </div>
