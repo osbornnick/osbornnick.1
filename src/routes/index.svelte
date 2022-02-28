@@ -1,7 +1,6 @@
 <script>
     import Link from "../components/link.svelte";
     import Timeline from "../components/timeline.svelte";
-
 </script>
 
 <main class="container mx-auto justify-center">
@@ -19,16 +18,10 @@
                 >.
             </p>
         </div>
-        <img
-            src={"../static/me-circle.png"}
-            alt="me smiling"
-            class="m-5 w-48"
-        />
+        <img src={"/me-circle.png"} alt="me smiling" class="m-5 w-48" />
     </div>
     <div class="w-2/3 mx-auto text-center">
-        <h1 class="text-2xl font-serif my-20">
-            Curious about me? Read on.
-        </h1>
+        <h1 class="text-2xl font-serif my-20">Curious about me? Read on.</h1>
     </div>
     <div class="w-2/3 mx-auto">
         <Timeline />
