@@ -1,5 +1,6 @@
 <script>
-    import CurrentlyReading from "../components/CurrentlyReading.svelte";
+    import Link from "../components/link.svelte";
+    ("");
 </script>
 
 <main class="flex items-center flex-col">
@@ -11,8 +12,8 @@
                 <p class="font-serif">I like to write code and bake bread.</p>
                 <p class="font-serif">I play piano and ultimate frisbee.</p>
                 <p class="font-serif">
-                    You can find me on <a href="https://github.com/osbornnick/"
-                        >github</a
+                    You can find me on <Link
+                        href="https://github.com/osbornnick/">github</Link
                     >.
                 </p>
             </div>
@@ -23,19 +24,7 @@
             class="m-5 w-1/3"
         />
     </div>
-    <CurrentlyReading />
 </main>
 
 <style>
-    a {
-        color: black;
-        background-color: transparent;
-        /* box-shadow: 0 -3px 0 0 #FADA5E inset; */
-        transition: box-shadow 200ms;
-        transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
-        box-shadow: 0 -3px 0 0 #fada5e inset;
-    }
-    a:hover {
-        box-shadow: 0 -10px 0 0 #fada5e inset;
-    }
 </style>
