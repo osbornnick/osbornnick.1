@@ -10,7 +10,7 @@
     let h, w;
 </script>
 
-<div class="hoverable">
+<div class="hoverable group">
     <div class="flex flex-row">
         <div class="sm:text-right basis-3/12 font-serif my-auto">
             <div class="text-xl">{year}</div>
@@ -45,34 +45,16 @@
                     cx={w / 2}
                     cy={h / 2}
                     r={w / 7}
-                    class="fill-slate-400"
+                    class="fill-slate-400 origin-center group-hover:scale-125 duration-300"
                 />
             </svg>
         </div>
-        <div class="basis-8/12 my-auto info">
+        <div
+            class="basis-8/12 my-auto origin-left sm:group-hover:scale-125 duration-300"
+        >
             <h3 class="text-xl font-serif">{title}</h3>
             <h4 class="italic font-serif">{subtitle}</h4>
             <p>{@html description}</p>
         </div>
     </div>
 </div>
-
-<style>
-    .hoverable:hover .info {
-        transform: scale(1.1) translateX(35px);
-    }
-
-    .info {
-        transition: transform 0.3s;
-    }
-
-    .hoverable:hover circle {
-        transform: scale(1.5);
-        transform-origin: 50% 50%;
-        transform-box: fill-box;
-    }
-    circle {
-        transition: transform 0.3s;
-        transform-origin: 50% 50%;
-    }
-</style>
