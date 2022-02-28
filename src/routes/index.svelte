@@ -1,8 +1,7 @@
 <script>
     import Link from "../components/link.svelte";
     import Timeline from "../components/timeline.svelte";
-    import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-    import { FontAwesomeIcon } from "fontawesome-svelte";
+
 </script>
 
 <main class="container mx-auto justify-center">
@@ -29,11 +28,6 @@
     <div class="w-2/3 mx-auto text-center">
         <h1 class="text-2xl font-serif my-20">
             Curious about me? Read on.
-            <FontAwesomeIcon
-                icon={faArrowDown}
-                size="xl"
-                class="text-sky-700"
-            />
         </h1>
     </div>
     <div class="w-2/3 mx-auto">
