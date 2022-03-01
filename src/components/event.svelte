@@ -50,7 +50,7 @@
             </svg>
         </div>
         <div
-            class="basis-8/12 my-auto origin-left sm:group-hover:scale-125 duration-300"
+            class="basis-8/12 my-auto origin-left md:group-hover:scale-125 duration-300"
         >
             <h3 class="text-xl font-serif">{title}</h3>
             <h4 class="italic font-serif">{subtitle}</h4>
