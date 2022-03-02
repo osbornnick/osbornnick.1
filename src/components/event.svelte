@@ -5,9 +5,16 @@
     export let description;
     export let first;
     export let last;
+    export let concurrent = false;
+    export let branch = false;
+    export let merge = false;
 
     const [month, year] = date.split(" ");
     let h, w;
+    let line1x;
+    let line2x;
+    $: line1x = w / 3;
+    $: line2x = (w * 2) / 3;
 </script>
 
 <div class="hoverable group">
@@ -24,29 +31,61 @@
             <svg width="100%" height="100%">
                 {#if first}
                     <path
-                        d="M {w / 2} {h / 2} v {h / 2}"
+                        d="M {line1x} {h / 2} v {h / 2}"
                         class="stroke-slate-400"
                         stroke-width={w / 13}
                     />
                 {:else if last}
                     <path
-                        d="M {w / 2} {h / 2} v -{h / 2}"
+                        d="M {line1x} {h / 2} v -{h / 2}"
                         class="stroke-slate-400"
                         stroke-width={w / 13}
                     />
                 {:else}
                     <path
-                        d="M {w / 2} 0 v {h}"
+                        d="M {line1x} 0 v {h}"
                         class="stroke-slate-400"
                         stroke-width={w / 13}
                     />
                 {/if}
-                <circle
-                    cx={w / 2}
-                    cy={h / 2}
-                    r={w / 7}
-                    class="fill-slate-400 origin-center group-hover:scale-125 duration-300"
-                />
+                {#if branch}
+                    <path
+                        d="M {line1x} {h / 2} C {line1x} {(3 * h) /
+                            4} {line2x} {(3 * h) / 4} {line2x} {h}"
+                        class="stroke-slate-400"
+                        stroke-width={w / 13}
+                    />
+                {/if}
+                {#if merge}
+                    <path
+                        d="M {line2x} 0 C {line2x} {h / 4} {line1x} {h /
+                            4} {line1x} {h / 2}"
+                        class="stroke-slate-400"
+                        stroke-width={w / 13}
+                    />
+                {/if}
+                {#if concurrent}
+                    <path
+                        d="M {line2x} 0 v {h}"
+                        class="stroke-slate-400"
+                        stroke-width={w / 13}
+                    />
+                    <circle
+                        cx={line2x}
+                        cy={h / 2}
+                        r={w / 7}
+                        class="fill-slate-400 group-hover:scale-125 duration-300"
+                        style="transform-origin: {line2x}px {h / 2}px"
+                    />
+                {:else}
+                    <circle
+                        cx={line1x}
+                        cy={h / 2}
+                        r={w / 7}
+                        class="fill-slate-400 group-hover:scale-125 duration-300"
+                        style="transform-origin: {line1x}px {h / 2}px"
+                    />
+                {/if}
             </svg>
         </div>
         <div
