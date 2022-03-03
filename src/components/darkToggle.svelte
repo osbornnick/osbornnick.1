@@ -38,7 +38,7 @@
 
     .slider:before {
         position: absolute;
-        content: "";
+        content: url("/moon.svg");
         height: 26px;
         width: 26px;
         left: 4px;
@@ -60,6 +60,7 @@
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
+        content: url("/sun.svg");
     }
 
     /* Rounded sliders */
