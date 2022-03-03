@@ -8,8 +8,24 @@
     export let concurrent = false;
     export let branch = false;
     export let merge = false;
-
-    const [month, year] = date.split(" ");
+    const monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
+    $: [month, year] =
+        date === "today"
+            ? [monthNames[new Date().getMonth()], new Date().getFullYear()]
+            : date.split(" ");
     let h, w;
     let line1x;
     let line2x;
@@ -17,7 +33,7 @@
     $: line2x = (w * 2) / 3;
 </script>
 
-<div class="hoverable group">
+<div class="group">
     <div class="flex flex-row">
         <div class="sm:text-right basis-3/12 font-serif my-auto">
             <div class="text-xl">{year}</div>
@@ -54,6 +70,7 @@
                             4} {line2x} {(3 * h) / 4} {line2x} {h}"
                         class="stroke-slate-400"
                         stroke-width={w / 13}
+                        fill="transparent"
                     />
                 {/if}
                 {#if merge}
@@ -62,6 +79,7 @@
                             4} {line1x} {h / 2}"
                         class="stroke-slate-400"
                         stroke-width={w / 13}
+                        fill="transparent"
                     />
                 {/if}
                 {#if concurrent}
@@ -86,10 +104,35 @@
                         style="transform-origin: {line1x}px {h / 2}px"
                     />
                 {/if}
+                {#if date === "today"}
+                    <defs>
+                        <linearGradient
+                            id="grad"
+                            gradientUnits="userSpaceOnUse"
+                            x1={line1x}
+                            y1={h / 2}
+                            x2={line2x}
+                            y2={h}
+                        >
+                            <stop offset="0" stop-color="#94a3b8" />
+                            <stop offset=".2" stop-color="#94a3b8" />
+                            <stop
+                                offset=".65"
+                                stop-opacity="0"
+                                stop-color="#94a3b8"
+                            />
+                        </linearGradient>
+                    </defs>
+                    <path
+                        d="M {line1x} {h / 2} L {line1x} {h}"
+                        stroke-width={w / 13}
+                        stroke="url(#grad)"
+                    />
+                {/if}
             </svg>
         </div>
         <div
-            class="basis-8/12 my-auto origin-left md:group-hover:scale-125 duration-300"
+            class="basis-8/12 my-auto origin-left md:group-hover:scale-125 duration-300 py-5"
         >
             <h3 class="text-xl font-serif">{title}</h3>
             <h4 class="italic font-serif">{subtitle}</h4>

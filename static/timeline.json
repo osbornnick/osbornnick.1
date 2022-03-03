@@ -3,8 +3,8 @@
         {
             "date": "September 2015",
             "title": "Bates College",
-            "subtitle": "Enrolled!",
-            "description": "Moved from the sleepy suburbs of Boston to Lewiston for my undergraduate education."
+            "subtitle": "Matriculated!",
+            "description": "Moved from the sleepy suburbs of Boston to the sleepy town of Lewiston, ME for my undergraduate education. Recruited to row, and ended up playing Ultimate Frisbee instead."
         },
         {
             "date": "May 2019",
@@ -15,21 +15,27 @@
         {
             "date": "September 2019",
             "title": "Carney, Sandoe, & Associates",
-            "subtitle": "Hired!",
-            "description": "needs a description"
+            "subtitle": "Hired! Technology Associate",
+            "description": "My first post-grad job. A small 30-person company, with an even smaller 3-person technology team, meant that I wore a lot of hats. From fixing employees print drivers, to implementing new web services to facilitate API interactions"
         },
         {
             "date": "January 2021",
             "title": "Northeastern University",
-            "subtitle": "Master of Science, Computer Science",
-            "description": "needs a description",
+            "subtitle": "Matriculated (again)!",
+            "description": "It was time to formalize my credentials with a Masters in Computer Science. And I wasn't quite ready to leave my job.",
             "concurrent": true
         },
         {
             "date": "January 2022",
             "title": "Northeastern University",
             "subtitle": "Full time student again!",
-            "description": "Left CS&A to persue my masters full time"
+            "description": "Left CS&A to persue my masters full time."
+        },
+        {
+            "date": "today",
+            "title": "Today",
+            "subtitle": "What shall I do today?",
+            "description": ""
         }
     ]
 }
