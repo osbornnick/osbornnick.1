@@ -31,6 +31,8 @@
     let line2x;
     $: line1x = w / 3;
     $: line2x = (w * 2) / 3;
+
+    let timelineColor = "slate-400"; // if changing, update the safelist
 </script>
 
 <div class="group">
@@ -48,19 +50,19 @@
                 {#if first}
                     <path
                         d="M {line1x} {h / 2} v {h / 2}"
-                        class="stroke-slate-400"
+                        class={"stroke-" + timelineColor}
                         stroke-width={w / 13}
                     />
                 {:else if last}
                     <path
                         d="M {line1x} {h / 2} v -{h / 2}"
-                        class="stroke-slate-400"
+                        class={"stroke-" + timelineColor}
                         stroke-width={w / 13}
                     />
                 {:else}
                     <path
                         d="M {line1x} 0 v {h}"
-                        class="stroke-slate-400"
+                        class={"stroke-" + timelineColor}
                         stroke-width={w / 13}
                     />
                 {/if}
@@ -68,7 +70,7 @@
                     <path
                         d="M {line1x} {h / 2} C {line1x} {(3 * h) /
                             4} {line2x} {(3 * h) / 4} {line2x} {h}"
-                        class="stroke-slate-400"
+                        class={"stroke-" + timelineColor}
                         stroke-width={w / 13}
                         fill="transparent"
                     />
@@ -77,7 +79,7 @@
                     <path
                         d="M {line2x} 0 C {line2x} {h / 4} {line1x} {h /
                             4} {line1x} {h / 2}"
-                        class="stroke-slate-400"
+                        class={"stroke-" + timelineColor}
                         stroke-width={w / 13}
                         fill="transparent"
                     />
@@ -85,14 +87,16 @@
                 {#if concurrent}
                     <path
                         d="M {line2x} 0 v {h}"
-                        class="stroke-slate-400"
+                        class={"stroke-" + timelineColor}
                         stroke-width={w / 13}
                     />
                     <circle
                         cx={line2x}
                         cy={h / 2}
                         r={w / 7}
-                        class="fill-slate-400 group-hover:scale-125 duration-300"
+                        class={"fill-" +
+                            timelineColor +
+                            " group-hover:scale-125 duration-300"}
                         style="transform-origin: {line2x}px {h / 2}px"
                     />
                 {:else}
@@ -100,7 +104,9 @@
                         cx={line1x}
                         cy={h / 2}
                         r={w / 7}
-                        class="fill-slate-400 group-hover:scale-125 duration-300"
+                        class={"fill-" +
+                            timelineColor +
+                            " group-hover:scale-125 duration-300"}
                         style="transform-origin: {line1x}px {h / 2}px"
                     />
                 {/if}

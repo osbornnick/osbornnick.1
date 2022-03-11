@@ -9,4 +9,9 @@ module.exports = {
     },
     plugins: [],
     darkMode: "class",
+    purge: {
+        options: {
+            safelist: ["stroke-slate-400", "fill-slate-400"],
+        },
+    },
 };
