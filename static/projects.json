@@ -1,0 +1,79 @@
+{
+    "projects": [
+        {
+            "title": "osbornnick.com",
+            "description": "You're looking at it! My personal website tells my story and acts as a portfolio of my code. With a fair amount of experience using React (2+ projects), I chose to extend my knowledge and learn a new framework, and landed on Svelte. Mostly because it was voted the most loved on Stack Overflow's <a href='https://insights.stackoverflow.com/survey/2021#section-most-loved-dreaded-and-wanted-web-frameworks'>2021 developer survey</a>. SvelteKit was a natural choice for a stream-lined development experience, and tailwind is my favorite way to keep css in class declarations. The nifty timeline graphic is built with SVG, and is meant to look like a git history.",
+            "link": "#",
+            "github": "https://github.com/osbornnick/osbornnick",
+            "image": "",
+            "tech": [
+                { "name": "Javascript", "link": "https://www.javascript.com/" },
+                { "name": "Svelte", "link": "https://svelte.dev/" },
+                { "name": "SvelteKit", "link": "https://kit.svelte.dev/" },
+                { "name": "tailwindcss", "link": "https://tailwindcss.com/" },
+                {
+                    "name": "SVG",
+                    "link": "https://developer.mozilla.org/en-US/docs/Web/SVG"
+                }
+            ],
+            "date": "March 2022"
+        },
+        {
+            "title": "NextGenDragRace",
+            "link": "https://eloquent-brown-19bc14.netlify.app/",
+            "description": "Final project for CS5160 <i>Web Development</i> for the fall 2021 semester at Northeastern University. A kind of fantasy league for RuPaul's Drag Race. Users can view information on their favorite queens, add those queens to saved rosters, and comment on each others rosters and queens/seasons. Uses Google Firebase to manage user logins, sessions, and comment information. The domain information (i.e. Queens, Seasons, Challenges) is provided by the freely available NoKeyNoShade API.",
+            "image": "nextgendragrace.png",
+            "github": "https://github.com/osbornnick/NextGenDragRace",
+            "tech": [
+                { "name": "Javascript", "link": "https://www.javascript.com/" },
+                { "name": "React", "link": "https://reactjs.org/" },
+                { "name": "Redux", "link": "https://react-redux.js.org/" },
+                {
+                    "name": "Google Firebase",
+                    "link": "https://firebase.google.com/"
+                },
+                {
+                    "name": "NoKeyNoShade API",
+                    "link": "https://drag-race-api.readme.io/docs"
+                }
+            ],
+            "date": "December 2021"
+        },
+        {
+            "title": "Quality Diversity in Human Computation",
+            "description": "Developed as part of a Research Apprenticeship awarded during the Spring 2022 semester with professor Seth Cooper.",
+            "image": "qdhc.png",
+            "github": "https://github.com/osbornnick/qd-staging",
+            "tech": [
+                {
+                    "name": "Typescript",
+                    "link": "https://www.typescriptlang.org/"
+                },
+                {
+                    "name": "Express",
+                    "link": "https://expressjs.com/"
+                },
+                {
+                    "name": "Webpack",
+                    "link": "https://webpack.js.org/"
+                },
+                {
+                    "name": "AWS Mechanical Turk",
+                    "link": "https://www.mturk.com/"
+                },
+                {
+                    "name": "Python",
+                    "link": "https://www.python.org/"
+                }
+            ],
+            "date": "January 2022"
+        },
+        {
+            "title": "",
+            "description": "",
+            "image": "",
+            "tech": [{ "name": "", "link": "" }],
+            "date": ""
+        }
+    ]
+}

@@ -2,6 +2,7 @@
     import Intro from "../components/intro.svelte";
     import Timeline from "../components/timeline.svelte";
     import DarkToggle from "../components/darkToggle.svelte";
+    import Projects from "../components/projects.svelte";
     import { onMount } from "svelte";
     let darkMode = "true";
     onMount(() => {
@@ -32,8 +33,9 @@
             <div class="md:w-2/3 mx-auto">
                 <Timeline />
             </div>
+            <div class="md:w-5/6 mx-auto">
+                <Projects />
+            </div>
         </div>
     </div>
 </main>
-
-

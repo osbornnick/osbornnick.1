@@ -32,7 +32,7 @@
     $: line1x = w / 3;
     $: line2x = (w * 2) / 3;
 
-    let timelineColor = "slate-400"; // if changing, update the safelist
+    let timelineColor = "slate-400"; // if changing, update the safelist in tailwind.config.cjs
 </script>
 
 <div class="group">

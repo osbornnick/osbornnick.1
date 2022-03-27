@@ -10,9 +10,8 @@
     });
 </script>
 
-<a
-    class="dark:text-slate-300 underline underline-offset-2 hover:text-blue-500 dark:hover:text-blue-500"
-    {href}><slot /></a
+<a class="underline hover:text-blue-500 dark:hover:text-blue-500" {href}
+    ><slot /></a
 >
 
 <style>
