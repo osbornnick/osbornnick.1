@@ -19,7 +19,7 @@
                 <li class="pr-2">
                     <a
                         href={t.link}
-                        class="underline decoration-blue-500 hover:text-blue-500 dark:decoration-blue-700"
+                        class="underline decoration-blue-500 hover:text-blue-500 dark:decoration-blue-700 font-mono"
                         >{t.name}</a
                     >
                 </li>
