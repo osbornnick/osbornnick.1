@@ -38,7 +38,7 @@
 <div class="group">
     <div class="flex flex-row">
         <div class="sm:text-right basis-3/12 font-serif my-auto">
-            <div class="text-xl">{year}</div>
+            <div class="text-lg">{year}</div>
             <div class="-translate-y-2">{month}</div>
         </div>
         <div
@@ -138,11 +138,11 @@
             </svg>
         </div>
         <div
-            class="basis-8/12 my-auto origin-left md:group-hover:scale-125 duration-300 py-5"
+            class="basis-8/12 my-auto origin-left md:group-hover:scale-125 duration-300"
         >
-            <h3 class="text-xl font-serif">{title}</h3>
-            <h4 class="italic font-serif">{subtitle}</h4>
-            <p>{@html description}</p>
+            <h3 class="text-lg font-serif">{title}</h3>
+            <h4 class="italic text-base font-serif">{subtitle}</h4>
+            <p class="text-sm">{@html description}</p>
         </div>
     </div>
 </div>

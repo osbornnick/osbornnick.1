@@ -10,7 +10,7 @@
 
 <div class="m-3 p-5 flex">
     <div class={image ? "md:w-1/2" : ""}>
-        <h1 class="text-2xl font-serif">
+        <h1 class="text-xl font-serif">
             {title}
         </h1>
         <!-- <img src="/GitHub-Mark-32px.png" alt="source" class="w-6" /> -->
@@ -25,7 +25,7 @@
                 </li>
             {/each}
         </ul>
-        <p class="pb-6 pr-6">{@html description}</p>
+        <p class="pb-6 pr-6 text-sm">{@html description}</p>
         <div class="flex flex-wrap">
             {#if link}
                 <a
