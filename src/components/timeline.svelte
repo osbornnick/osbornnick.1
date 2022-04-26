@@ -5,6 +5,7 @@
     onMount(() => {
         data.timeline[0].first = true;
         data.timeline[data.timeline.length - 1].last = true;
+        data.timeline.reverse();
         data.timeline.forEach((evt, i) => {
             if (evt.concurrent) {
                 if (i - 1 > -1)

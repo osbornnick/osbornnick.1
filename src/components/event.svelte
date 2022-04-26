@@ -49,13 +49,13 @@
             <svg width="100%" height="100%">
                 {#if first}
                     <path
-                        d="M {line1x} {h / 2} v {h / 2}"
+                        d="M {line1x} {h / 2} v -{h / 2}"
                         class={"stroke-" + timelineColor}
                         stroke-width={w / 13}
                     />
                 {:else if last}
                     <path
-                        d="M {line1x} {h / 2} v -{h / 2}"
+                        d="M {line1x} {h / 2} v {h / 2}"
                         class={"stroke-" + timelineColor}
                         stroke-width={w / 13}
                     />
@@ -118,7 +118,7 @@
                             x1={line1x}
                             y1={h / 2}
                             x2={line2x}
-                            y2={h}
+                            y2={0}
                         >
                             <stop offset="0" stop-color="#94a3b8" />
                             <stop offset=".2" stop-color="#94a3b8" />
@@ -130,7 +130,7 @@
                         </linearGradient>
                     </defs>
                     <path
-                        d="M {line1x} {h / 2} L {line1x} {h}"
+                        d="M {line1x} {h / 2} L {line1x} {0}"
                         stroke-width={w / 13}
                         stroke="url(#grad)"
                     />
