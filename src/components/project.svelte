@@ -8,10 +8,9 @@
     export let date;
     import GithubIcon from "./githubIcon.svelte";
     import ArrowIcon from "./arrowIcon.svelte";
-    const hovered = false;
 </script>
 
-<div class="m-3 p-5 flex">
+<div class="p-8 flex">
     <div class={image ? "md:w-1/2" : ""}>
         <h1 class="text-xl font-serif flex">
             {title}
