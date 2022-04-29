@@ -30,10 +30,10 @@
                     Curious about me? Read on.
                 </h1>
             </div>
-            <div class="md:w-2/3 mx-auto">
+            <div class="md:w-2/3 mx-auto m-2">
                 <Timeline />
             </div>
-            <div class="md:w-5/6 mx-auto">
+            <div class="md:w-5/6 mx-auto m-2">
                 <Projects />
             </div>
         </div>

@@ -6,14 +6,26 @@
     export let github;
     export let tech;
     export let date;
+    import GithubIcon from "./githubIcon.svelte";
+    import ArrowIcon from "./arrowIcon.svelte";
+    const hovered = false;
+
+    const enter = () => (hovered = true);
+    const leave = () => (hovered = false);
 </script>
 
 <div class="m-3 p-5 flex">
     <div class={image ? "md:w-1/2" : ""}>
-        <h1 class="text-xl font-serif">
+        <h1 class="text-xl font-serif flex">
             {title}
+            {#if github}
+                <a href={github} class="self-center">
+                    <GithubIcon
+                        classes="dark:fill-slate-300 ml-2 p-0 hover:fill-slate-600 dark:hover:fill-slate-100"
+                    />
+                </a>
+            {/if}
         </h1>
-        <!-- <img src="/GitHub-Mark-32px.png" alt="source" class="w-6" /> -->
         <ul class="flex flex-wrap py-2">
             {#each tech as t, i}
                 <li class="pr-2">
@@ -26,21 +38,16 @@
             {/each}
         </ul>
         <p class="pb-6 pr-6 text-sm">{@html description}</p>
-        <div class="flex flex-wrap">
-            {#if link}
-                <a
-                    href={link}
-                    class="p-4 mx-2 border rounded-lg border-blue-500 font-serif text-blue-500 hover:bg-blue-500 hover:text-white duration-150"
-                    >Visit {title}</a
-                >
-            {/if}
-            {#if github}
-                <a
-                    class="p-4 mx-2 border rounded-lg font-serif border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-white duration-150"
-                    href={github}>View source</a
-                >
-            {/if}
-        </div>
+        {#if link}
+            <a class=" text-sm flex group" href={link}>
+                VISIT {title.toUpperCase()}
+                <ArrowIcon
+                    stroke="dark:stroke-white stroke-black"
+                    fill="dark:fill-white fill-black"
+                    classes="self-center ml-2 group-hover:translate-x-4 duration-200"
+                />
+            </a>
+        {/if}
     </div>
     {#if image}
         <div class="hidden md:block my-auto w-1/2">

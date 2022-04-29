@@ -23,7 +23,7 @@
     });
 </script>
 
-<h1 class="text-2xl font-serif mb-5 sm:mb-0">Professional Timeline</h1>
+<h1 class="text-2xl font-serif mb-5 sm:mb-0 ml-2">Professional Timeline</h1>
 <div class="space-y-1 sm:space-y-0 ml-5 md:ml-0">
     {#each data.timeline as event, i}
         <Event {...event} />
