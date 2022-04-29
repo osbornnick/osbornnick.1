@@ -9,9 +9,6 @@
     import GithubIcon from "./githubIcon.svelte";
     import ArrowIcon from "./arrowIcon.svelte";
     const hovered = false;
-
-    const enter = () => (hovered = true);
-    const leave = () => (hovered = false);
 </script>
 
 <div class="m-3 p-5 flex">
